@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Animal Adjectives</string>
+    <string name="action_settings">Settings</string>
+    <string name="Word2">Adjectives</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/string1" name="gobutton">Go!</string>
+    <string name="Word1">Animal</string>
+    <string name="favourites">Favourites</string>
+    <string name="favourites_title">Animal Adjectives - Favourites</string>
+	<string name="favourites_none_selected">You\'ve not selected any favourites yet.</string>
+	<string name="favourites_added_to_favourites_toast">added to my favourites</string>
+	<string name="favourites_remove_from_favourites_toast">removed from my favourites</string>
+	<string name="favourites_remove_from_part1">Are you sure you want to remove</string>
+	<string name="favourites_remove_from_part2">from your favourites?</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">OK</string>
+	<string name="no_previous_avaliable">There are no previous Animal Adjectives</string>
+	<string name="settings_title">Animal Adjectives - Settings</string>
+	<string name="settings_timeBetweenNotifications">Time between notifications:</string>
+	<string name="settings_allowNotifications">Allow Notifications</string>
+	<string name="placeholderString">---</string>
+	<string name="app_id">816055935086140</string>
+	<string name="needFBAppInstalled">You need the Facebook app installed to do this</string>
+	<string name="share_description">Make your own Animal Adjectives!</string>
+	<string-array name="previous_array">
+	    <item>Sorry cupcake, there are no previous Animal Adjectives.</item>
+		<item>Theres nothing back there!</item>
+		<item>Don\'t be silly.</item>
+		<item>Lets move forward theres nothing back there!</item>
+		<item>Nah. Ain\'t nuffin there.</item>
+	</string-array>
+	<string-array name="add_to_favs_array">
+	    <item>Oooh ---, lovely!</item>
+		<item>--- is one of my favourites too!</item>
+		<item>Haha! ---..</item>
+		<item>That\'s a keeper!</item>
+		<item>--- :D</item>
+		<item>OMG ---</item>
+		<item>Woo! ---!</item>
+		<item>---!?!?!?!?!</item>
+		<item>---.. so Cray!</item>
+		<item>--- - what a beaut</item>
+		<item>Great choice, --- added to favourites</item>
+		<item>--- will be so happy</item>
+		<item>Mmhmmhmm ---</item>
+	</string-array>
+	<string-array name="remove_from_favs_array">
+	    <item>Is ---, not good enough for you?!</item>
+		<item>Oh noooo! ---! :(</item>
+		<item>Poor ---</item>
+		<item>Is there no room in your heart for ---?!</item>
+		<item>What?! --- is the best!</item>
+		<item>I wouldn\'t mess with --- if I were you</item>
+		<item>---? You can\'t be serious!</item>
+		<item>Ow :(</item>
+		<item>You\'ve made --- sad</item>
+		<item>You\'re so fickle</item>
+		<item>Your playing with ---\'s heart</item>
+	</string-array>
+	
+	<string-array name="time_between_notifications_options">
+        <item>1 Minute</item>
+        <item>5 Minutes</item>
+        <item>1 Hour</item>
+        <item>3 Hours</item>
+        <item>6 Hours</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+        <item>3 Days</item>
+    </string-array>
+    <string-array name="time_between_notifications_mappings">
+        <item>1</item>
+        <item>5</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>4320</item>
+    </string-array>
+	
+</resources>

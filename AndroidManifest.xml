@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chrisb.animaladjectives"
+    android:versionCode="9"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+	
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="chrisb.animaladjectives.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:host="fb.me" android:scheme="https" />
+		    </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="chrisb.animaladjectives.main.SettingsActivity"
+            android:label="@string/settings_title" >
+        </activity>
+        <activity
+            android:name="chrisb.animaladjectives.main.MyFavourites"
+            android:label="@string/favourites_title" >
+        </activity>
+        
+        <service android:name="chrisb.animaladjectives.notifications.MyAlarmService"
+                 android:enabled="true" />
+         
+        <receiver android:name="chrisb.animaladjectives.notifications.MyReceiver" android:enabled="true">
+        	<intent-filter>
+        	    <action android:name="android.intent.action.BOOT_COMPLETED"/> 	    
+       		</intent-filter>
+        </receiver>
+        
+        <receiver android:name="chrisb.animaladjectives.notifications.AlertServiceWrapper" android:enabled="true"/>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
+    </application>
+
+</manifest>

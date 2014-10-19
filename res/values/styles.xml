@@ -1,0 +1,66 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>  
+        <item name="android:spinnerDropDownItemStyle">@style/customSpinnerItemTheme</item>
+        <item name="android:spinnerItemStyle">@style/customSpinnerItemTheme</item>
+    </style>
+    
+    <style name="ActionBarTheme" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+	    <item name="android:titleTextStyle">@style/normalTextColor</item>
+	</style>
+	
+    <style name="customSpinnerItemTheme" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+    	<item name="android:textColor">@color/main_color</item>
+    	<item name="android:textSize">@dimen/settings_text_size</item>
+    </style>
+    
+    <style name="verticalTextStyle"
+        parent="android:Widget.TextView">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    
+    <style name="normalTextColor">
+  		<item name="android:textColor">@color/textcolor</item>
+    </style>
+    
+    <style name="titleTextStyle"
+       	parent="@style/normalTextColor">
+        <item name="android:textSize">20dp</item>
+    </style>
+    
+    <style name="responseTextStyle"
+       	parent="@style/normalTextColor">
+        <item name="android:textSize">20dp</item>
+    </style>
+    
+    <style name="settingsTextStyle"
+        parent="@style/normalTextColor">
+        <item name="android:textSize">@dimen/settings_text_size</item>
+    </style>
+    
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/mybutton</item>
+        <item name="android:textColor">@color/second_color</item>
+    </style>
+    
+    <style name="appBackground">
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+</resources>

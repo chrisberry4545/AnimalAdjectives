@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    style="@style/appBackground" >
+    
+    <LinearLayout 
+        android:id="@+id/favourites_horizontalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+    	android:gravity="center">
+        
+        <Button
+            android:id="@+id/favourites_previousFavouriteButton"
+            android:drawableTop="@drawable/ic_action_previous_item"
+	        android:background="@android:color/transparent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    
+	     <LinearLayout
+	        android:id="@+id/favourites_relativeLayoutWrapper"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:gravity="center"
+	        android:orientation="vertical">
+	        
+	        <LinearLayout 
+		          android:id="@+id/main_textAndFavouritesWrapper"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:orientation="horizontal">
+		          
+	            <TextView
+			        android:id="@+id/favourites_wordResultView"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        style="@style/responseTextStyle"/>
+	            
+		 	</LinearLayout>
+	        
+	        
+		        
+		        <RelativeLayout
+			        android:id="@+id/favourites_favouriteButtonSwitcher"
+			       	android:layout_width="wrap_content"
+			      	android:layout_height="wrap_content">
+			      	
+			      	<ImageView
+			            android:id="@+id/favourites_addFavouriteButton"
+			            android:src="@drawable/ic_action_favorite2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:visibility="invisible"/>
+		         
+		    	
+			        <ImageView
+			            android:id="@+id/favourites_removeFavouriteButton"
+			            android:src="@drawable/ic_action_favorite_selected2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"/>
+		            
+			    </RelativeLayout>
+	            
+	        
+	        <RelativeLayout
+	                android:id="@+id/favourites_relativeLayout1"
+	                android:layout_width="225dp"
+	                android:layout_height="225dp"
+	                android:gravity="center_horizontal">
+	
+	                <ImageView
+	                    android:id="@+id/favourites_mainImageView"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:contentDescription="@string/Word1"/>
+	
+	                <RelativeLayout
+	                    android:id="@+id/favourites_imageLoading"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent">
+	                    
+	                    <ProgressBar
+	                    android:visibility="visible"
+	                    android:layout_centerInParent="true"
+	                    android:layout_width="50dp"
+	                    android:layout_height="50dp" />
+	                    
+	                </RelativeLayout>
+	                
+	    	</RelativeLayout>
+	    	
+	        <ImageView 
+	            android:id="@+id/favourites_shareToFacebookButton"
+		        android:src="@drawable/facebookshare"
+			        android:layout_height="match_parent"
+			        android:layout_width="wrap_content"
+	            />
+	        
+	    </LinearLayout>
+	    
+	     
+        <Button
+            android:id="@+id/favourites_nextFavouriteButton"
+            android:drawableTop="@drawable/ic_action_next_item"
+	        android:background="@android:color/transparent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    
+</LinearLayout>
